@@ -1,0 +1,285 @@
+:root{
+    max-width: 1280px;
+    margin: 0 auto; 
+    --fonts: Montserrat, Arial, sans-serif;
+    --light-gray: #eaeaea;
+    --med-gray: #555;
+    --white: #fff;
+    /*  color palette in Hex from: https://color.adobe.com/Colliding-Power-color-theme-7210405/ */
+    --carbon: #363432;
+    text-align: center;
+    background-image: url("micro_carbon.webp");
+  }
+    /* ----- HEADER/FOOTER STYLES ----- */
+  header{
+    padding-top: 0.05rem;
+    text-align: center;
+  }
+  header, footer{
+    color: var(--black);
+    align-items: center;
+    background-color: var(--white);
+  }
+  footer{
+    padding: 0.5rem;
+    line-height: 1;
+    background-color: var(--light-gray);
+    font-family: roboto;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+     /* ----- HOME H1 STYLES ----- */  
+ h1{
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 1rem;
+  font-family: roboto;
+  color: var(--black);
+}
+  /* ----- HOME ICON STYLES ----- */
+    #sushiart{
+      transform: scaleX(-1);
+      background: white;
+      --small-shadow: -0.25rem 0.25rem 0.5rem var(--med-gray);
+      --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--med-gray));
+      padding-bottom: 0.5rem;
+    }
+    #sushiart, header{
+      display: flex;
+    }
+  
+  /* ----- BODY STYLES ----- */
+  body{
+    margin: 0 auto;
+    font-family: var(--fonts);
+    color: var(--black);
+    line-height: 1.35;
+    box-sizing: border-box;
+    background-color: var(--white);
+  }
+  
+  /* ----- H3 STYLES ----- */  
+  h3{
+    font-size: 1.12rem;
+    margin: 0.5rem 0;
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* ----- NAVIGATION STYLES ----- */
+  
+  nav{
+      background-color: var(--white);
+      padding-left: 4rem;
+      border-width: 2.5px;
+      padding-top: 0rem;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  
+  nav li{
+      width: 275px;
+  }
+  
+  nav a{
+    margin: 0 1rem;
+    color: var(--black);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+  }
+
+  .sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  padding-top: 0.1rem;
+} 
+  /* ----- HOME MAIN STYLES ----- */
+  
+  homemain{
+    background-color: var(--light-gray);
+  }
+    #mainh2{
+    padding-top: 1rem;
+    font-family: roboto;
+    font-size: 1.75rem;
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+  }
+    #mainh2, #ourmenu{
+    margin: 1rem auto;
+    display: grid;
+      gap: 1rem;
+  }
+
+  #dumplings{
+      margin: 0 auto;
+      display: block;
+    box-shadow: var(--box-shadow);
+    max-width: 1280px;
+    height: auto;
+    --small-shadow: -0.25rem 0.25rem 0.5rem var(--med-gray);
+    --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--med-gray));
+  }
+  
+  #ourmenu a{
+    text-align: center;
+    font-family: roboto;
+    margin: 0 1rem;
+    font-weight: bold;
+    padding-bottom: 1.9rem;
+    color: var(--med-gray);
+    }
+
+/* ----- CATERING SECTION STYLES ----- */
+  
+#catering{
+    gap: 1rem;
+}
+
+#catering h3{
+    padding-top: 2.25rem;
+    font-family: roboto;
+    font-size: 1.75rem;
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+}
+
+#catering p{
+    margin: 1rem 26.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+}
+   
+/* * ----- LOCAL/CHEF STYLES ----- */
+  #moreinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem;
+    max-width: fit-content;
+    align-content: center;
+  }
+  #local, #chef{
+    width: 400px;
+    display: inline-block;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  #local{
+    padding-right: 1rem;
+  }
+
+  #chef{
+    padding-left: 1rem;
+  }
+
+  #local img, #chef img{
+    display: inline-block;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+  }
+
+  #local h3, #chef h3{
+    font-family: roboto;
+    border-radius: 0.25rem 0.25rem 0 0;
+    margin-bottom: 0;
+}
+
+#local p, #chef p{
+    margin: auto 1.5rem; 
+    padding: 0.5rem 1rem 1rem 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* ----- CONTACT SECTION STYLES ----- */
+
+#contactmain{
+  background-color: white;
+  padding-bottom: 0.5rem;
+}
+
+#intro{
+  text-align: center;
+  background-color: var(--light-gray);
+  padding-bottom: 2rem;
+}
+
+#intro img{
+    height: auto;
+    border-radius: 0;
+    box-shadow: var(--box-shadow);
+    margin: 0 auto;
+}
+
+#introh2{
+  padding-top: 1rem;
+  font-family: roboto;
+  font-size: 1.75rem;
+  color: var(--black);
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem auto;
+  display: grid;
+    gap: 1rem;
+}
+
+#intro p{
+  margin: 1rem 30rem;
+  padding-bottom: 0.5rem;
+  line-height: 1;
+}
+
+/* ----- FORM SECTION STYLES ----- */
+
+#formh2{
+  font-family: roboto;
+  font-size: 1.75rem;
+  color: var(--black);
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+#form{
+  width: 600px;
+	margin: auto;
+	padding: 0px 16px 16px 16px;
+	border-radius: 4px;
+  text-align: initial;
+}
+
+#address, #city, #state, #zip, #phone, #email, #preference, #messages{
+  padding-top: 20px;
+}
+#submit{
+  padding-top: 15px;
+  text-align: center;
+}
+
+/* ----- HOVER STYLES ----- */
+  @media (hover:hover){
+    
+    nav a:hover{
+      color: var(--med-gray);
+    }
+
+    #ourmenu a:hover{ 
+        color: var(--med-gray);
+        font-weight: bold;
+    }
+  }
